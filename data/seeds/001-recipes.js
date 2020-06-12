@@ -11,6 +11,7 @@ exports.seed = function (knex) {
         { name: 'Secret Hamburger Recipe' },
         { name: 'Super Hot Sauce' },
 
+
       ]);
     });
 };

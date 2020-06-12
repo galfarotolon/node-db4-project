@@ -7,12 +7,49 @@ exports.seed = function (knex) {
       // Inserts seed entries
       return knex('recipe_details').insert([
 
-        { name: 'Cheese' },
-        { name: 'Eggs' },
-        { name: 'Ham' },
-        { name: 'Flour' },
-        { name: 'Sugar' },
-        { name: 'Chili' },
+        {
+
+          recipe_id: 1,
+          ingredient_id: 1,
+          quantity: 4
+
+
+        },
+
+        {
+
+          recipe_id: 1,
+          ingredient_id: 2,
+          quantity: 3
+
+
+        },
+
+        {
+
+          recipe_id: 1,
+          ingredient_id: 3,
+          quantity: 2
+
+
+        },
+        {
+
+          recipe_id: 1,
+          ingredient_id: 4,
+          quantity: 7
+
+
+        },
+        {
+
+          recipe_id: 1,
+          ingredient_id: 5,
+          quantity: 3
+
+
+        },
+
 
       ]);
     });

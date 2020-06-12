@@ -14,11 +14,11 @@ module.exports = {
     seeds: {
       directory: './data/seeds'
     },
-    pool: {
-      afterCreate: function (conn, done) {
-        conn.run('PRAGMA foreign_keys = ON', done) //all this pool object has to be added in order to 
-      },    //allow tables to acces foreign keys and other table data
-    },
+    // pool: {
+    //   afterCreate: function (conn, done) {
+    //     conn.run('PRAGMA foreign_keys = ON', done) //all this pool object has to be added in order to 
+    //   },    //allow tables to acces foreign keys and other table data
+    // },
   },
 
 

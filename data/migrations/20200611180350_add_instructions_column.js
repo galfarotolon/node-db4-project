@@ -14,3 +14,4 @@ exports.down = function (knex) {
     return knex.schema.dropColumn('instructions')
 
 };
+
