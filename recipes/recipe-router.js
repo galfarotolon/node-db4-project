@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
             if (scheme) {
                 res.json(scheme);
             } else {
-                res.status(404).json({ message: 'Could not find scheme with given id.' })
+                res.status(404).json({ message: 'Could not find recipe with given id.' })
             }
         })
         .catch(err => {
@@ -40,11 +40,11 @@ router.get('/:id/shoppinglist', (req, res) => {
             if (steps.length) {
                 res.json(steps);
             } else {
-                res.status(404).json({ message: 'Could not find steps for given scheme' })
+                res.status(404).json({ message: 'Could not find ingredients for given recipe' })
             }
         })
         .catch(err => {
-            res.status(500).json({ message: 'Failed to get steps' });
+            res.status(500).json({ message: 'Failed to get ingredients' });
         });
 });
 
